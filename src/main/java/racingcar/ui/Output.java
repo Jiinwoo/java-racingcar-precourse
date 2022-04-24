@@ -25,11 +25,11 @@ public class Output {
         StringBuilder sb = new StringBuilder();
         for (Result.CarDTO carDTO : result.getCarDTOList()) {
             sb.append(carDTO.getName());
-            sb.append(": ");
+            sb.append(" : ");
             repeatHyphen(sb, carDTO.getPosition());
             sb.append("\n");
+            System.out.println(sb);
         }
-        System.out.println(sb);
     }
 
     private static void repeatHyphen(StringBuilder sb, int position) {

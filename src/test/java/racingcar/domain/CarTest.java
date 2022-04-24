@@ -22,6 +22,7 @@ class CarTest {
         car.tryToGo();
         //then
         assertThat(car.getPosition()).isEqualTo(1);
+        mock.close();
     }
 
     @Test
@@ -34,5 +35,6 @@ class CarTest {
         car.tryToGo();
         //then
         assertThat(car.getPosition()).isEqualTo(0);
+        mock.close();
     }
 }
